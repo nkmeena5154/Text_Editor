@@ -2,8 +2,6 @@ from tkinter import *
 from tkinter import filedialog
 from tkinter import colorchooser
 from time import sleep
-#from gtts import gTTS
-#import os
 import speech_recognition as nk
 
 root=Tk()
@@ -74,38 +72,9 @@ class editor:
             self.textarea.insert(END, line)
 
 
-
-        """with open('last.txt', 'r') as nkmeena:
-            for i in nkmeena:
-                text = text + i
-
-        speech = gTTS(text, 'en')
-        speech.save("m33.mp3")
-        os.system("m33.mp3")
-"""
     def zoomin(textarea):
         root.state('zoomed')
-
- #   def zoomout(textarea):
-  #      root.attributes('-zoomed')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
     def __init__(self,rootpass):
         scroll = Scrollbar(root)
         scroll.pack(side=RIGHT, fill=Y)
